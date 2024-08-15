@@ -1,3 +1,19 @@
+@import "../../colors.scss";
+
 .container{
-    background-color: tomato;
+    background-color: $lightInfoColor;
+    color: $primaryColor;
+    border-radius: 8px;
+    padding: 14px 29px;
+    cursor:pointer;
+}
+
+.container:hover {
+    background-color: $primaryHoverColor;
+    color: $backgroundPrimaryColor;
+}
+
+.container:active {
+    background-color: $primaryColor;
+    color: $backgroundPrimaryColor;
 }
