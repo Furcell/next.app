@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default () => {
-  const [text, setText] = useState("Misha");
+  const [text, setText] = useState("Lasha");
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
