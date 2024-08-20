@@ -5,6 +5,7 @@ type Props = {
   className?: string;
   disabled?: boolean;
   mode?: "fill" | "outline";
+  icon?: boolean;
 };
 
 export default (props: Props) => {
@@ -15,6 +16,7 @@ export default (props: Props) => {
 
   return (
     <button disabled={props.disabled} className={classes.join(" ").trim()}>
+      {props.icon && "X"}
       {props.title}
     </button>
   );
