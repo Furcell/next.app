@@ -10,6 +10,7 @@ export default () => {
   return (
     <div>
       <input type="text" value={task} onChange={onChange} />
+      <button>დამატება</button>
     </div>
   );
 };
