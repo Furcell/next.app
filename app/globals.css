@@ -91,6 +91,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+img{
+  width: 6rem;
+}
 
 button {
   width: 5rem;
