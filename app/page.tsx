@@ -16,14 +16,14 @@ export default function Home() {
       <div className={styles.center}>
 
         <Todo/>
-        {/* <Counter />
+        <Counter />
         <TextInput />
         <CheckBox />
         {!!userLoggedIn ? (
           <Button title="გამოსვლა" />
         ) : (
           <Button title="რეგისტრაცია" />
-        )} */}
+        )}
       </div>
     </main>
   );

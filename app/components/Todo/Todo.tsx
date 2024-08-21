@@ -8,17 +8,29 @@ export default () => {
     setTask(e.target.value);
   };
 
-  const onAdd = () =>{
-    setTasks([...tasks,task])
-    setTask(" ");
-  }
+  const onAdd = () => {
+    if (task.trim()) {
+      setTasks([...tasks, task]);
+      setTask("");
+    }
+  };
+
+  const onRemove = (index: number) => {
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
+  };
 
   return (
     <div>
       <input type="text" value={task} onChange={onChange} />
-      <button onClick={onAdd}>დამატება</button>
+      <button onClick={onAdd}>Add</button>
       <ul>
-        {tasks.map(task => <li>{task}</li>)}
+        {tasks.map((task, index) => (
+          <li key={index}>
+            {task}
+            <button onClick={() => onRemove(index)}>Remove</button>
+          </li>
+        ))}
       </ul>
     </div>
   );
