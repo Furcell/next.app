@@ -1,4 +1,10 @@
+import { limitState, sortState } from "@/app/states";
+import { useRecoilState } from "recoil";
+
 export default () => {
+  const [sort,setSort]= useRecoilState(sortState);
+  const [limit,setLimit] = useRecoilState(limitState)
+
   const onSortChange = (e: any) => {
     setSort(e.target.value);
     localStorage.setItem("sort", e.target.value);

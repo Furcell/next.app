@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+
 import styles from "./page.module.css";
 
 // Components
@@ -13,7 +13,7 @@ import Products from "./components/Products/Products";
 import Filter from "./components/Filters/Filter";
 
 export default function Home() {
-  const userLoggedIn = 0;
+  // const userLoggedIn = 0;
   return (
     <main className={styles.main}>
       <div className={styles.center}>
